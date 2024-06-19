@@ -1,8 +1,11 @@
+# ts-async-result
+
 [![npm @krist7599555/ts-async-result](https://img.shields.io/npm/v/@krist7599555/ts-async-result)](https://www.npmjs.com/package/@krist7599555/ts-async-result)
 
 ```typescript
 class AsyncResult<Value, Error> implements PromiseLike<Value>;
 ```
+
 **Promise that not suck !!**
 
 - same api as native `Promise`
@@ -24,11 +27,17 @@ import { AsyncResult } from '@krist7599555/ts-async-result';
 ### Creation
 
 ```typescript
+new AsyncResult<V, T>((resolve, reject) => { ... })
+```
+
+```typescript
 AsyncResult.from(async () => fetch(str)) // from () => Promise
 AsyncResult.from(() => fetch(str))
 AsyncResult.from(fetch(str)) // from Promise
 AsyncResult.resolve("OK") // from Value
 AsyncResult.reject("Er")
+AsyncResult.EMPTY // always resolve undefined
+AsyncResult.NEVER // never resolve
 ```
 
 ### Transform
