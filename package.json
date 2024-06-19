@@ -4,6 +4,15 @@
   "version": "1.0.0",
   "type": "module",
   "files": ["./dist"],
+  "module": "dist/async-result.js",
+  "types": "dist/async-result.d.ts",
+  "sideEffects": false,
+  "author": "Krist Ponpairin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krist7599555/ts-async-result.git"
+  },
   "exports": {
     ".": {
       "types": "./dist/async-result.d.ts",
