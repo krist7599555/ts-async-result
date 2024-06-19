@@ -9,6 +9,18 @@
   "sideEffects": false,
   "author": "Krist Ponpairin",
   "license": "MIT",
+  "keywords": [
+    "AsyncResult",
+    "Async",
+    "Promise",
+    "PromiseLike",
+    "Err",
+    "Ok",
+    "typescript",
+    "pipe",
+    "tap",
+    "fp"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/krist7599555/ts-async-result.git"
