@@ -1,0 +1,23 @@
+{
+  "name": "@krist7599555/ts-async-result",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["./dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/async-result.d.ts",
+      "import": "./dist/async-result.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}
