@@ -1,12 +1,13 @@
-# @krist7599555/ts-async-result
-
 [![npm @krist7599555/ts-async-result](https://img.shields.io/npm/v/@krist7599555/ts-async-result)](https://www.npmjs.com/package/@krist7599555/ts-async-result)
 
 ```typescript
 class AsyncResult<Value, Error> implements PromiseLike<Value>;
 ```
+**Promise that not suck !!**
 
-<strong style="font-weight: bold; font-size: 2.5rem">Promise<br>+ Error Type<br>+ Chain Utility Method</strong>
+- same api as native `Promise`
+- add Error Type
+- add Chain Utility Method like OOP
 
 ## Install
 
@@ -36,7 +37,7 @@ AsyncResult.reject("Er")
 // chain method
 const out = await AsyncResult
   .from(async () => fetch(str))
-  .assert(res => res.status == 200, (res) => new HttpError(res.status))
+  .guard(res => res.status == 200, (res) => new HttpError(res.status))
   .then(res => res.json())
   .tap(data => console.log("raw data:", data))
   .then(data => data || {})
