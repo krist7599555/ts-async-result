@@ -1,6 +1,6 @@
 {
   "name": "@krist7599555/ts-async-result",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "files": ["./dist"],
